@@ -1,0 +1,30 @@
+/* Custom styles */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Navbar styles */
+nav {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Hero section styles */
+section.bg-blue-500 {
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+}
+
+/* Contact form styles */
+form input, form textarea {
+    background-color: #f8fafc;
+}
+
+/* Hover effects */
+a:hover {
+    color: #1d4ed8;
+    transition: color 0.3s;
+}
+
+/* Footer styles */
+footer {
+    border-top: 1px solid #e2e8f0;
+}
