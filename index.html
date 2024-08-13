@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nimsara De Zoysa | Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!-- For icons -->
     <script>
@@ -30,6 +32,10 @@
       <ul class="flex space-x-4">
         <li><a href="#about" class="hover:text-blue-500">About</a></li>
         <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+        <li><a href="#education" class="hover:text-blue-500">Education</a></li>
+        <li>
+          <a href="#tech-stack" class="hover:text-blue-500">Technology Stack</a>
+        </li>
         <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
       </ul>
     </nav>
@@ -44,7 +50,7 @@
         />
         <h2 class="text-3xl font-semibold">Hello! I'm Nimsara</h2>
         <p class="text-lg mt-2">
-          A 4th Year Computer Science Undergraduate with a passion for Software
+          A 3rd Year Computer Science Undergraduate with a passion for Software
           Engineering, Machine Learning, and AI.
         </p>
       </div>
@@ -66,6 +72,30 @@
           take on new opportunities that push me to learn, grow, and excel in
           the field of software engineering.
         </p>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="bg-gray-50 py-12">
+      <div class="container mx-auto px-4">
+        <h3 class="text-2xl font-semibold mb-4">Education</h3>
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6 flex">
+          <img
+            src="/assets/ucsc.jpg"
+            alt="Graduation Cap"
+            class="w-24 h-24 object-cover rounded-full mr-6"
+          />
+          <div>
+            <h4 class="text-xl font-semibold">
+              Bachelor of Science in Computer Science
+            </h4>
+            <p class="text-gray-600">
+              University of Colombo School of Computing
+            </p>
+            <p class="text-sm text-gray-600">2022 - Present</p>
+            <p class="mt-2">CGPA: 3.7423</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -146,10 +176,11 @@
               property rentals, connecting travelers with hosts.
             </p>
             <p class="text-sm text-gray-600 mb-2">
-              Duration: July 2023 - January 2024
+              Duration: May 2024 - Present
             </p>
             <p class="text-sm text-gray-600 mb-4">
-              Technologies: React JS, Node.js, MongoDB,Stripe,Socket Programming
+              Technologies: React JS, Node.js, MongoDB, Stripe, Socket
+              Programming
             </p>
             <a
               href="https://github.com/nimdz/StayMate"
@@ -168,6 +199,63 @@
           >
             Visit my GitHub Profile for more projects
           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section id="tech-stack" class="py-12">
+      <div class="container mx-auto px-4">
+        <h3 class="text-2xl font-semibold mb-4">Technology Stack</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="text-center">
+            <i class="fab fa-php text-4xl text-indigo-500 mb-2"></i>
+            <p class="text-sm">PHP</p>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-js-square text-4xl text-yellow-500 mb-2"></i>
+            <p class="text-sm">JavaScript</p>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-react text-4xl text-blue-400 mb-2"></i>
+            <p class="text-sm">React</p>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-node-js text-4xl text-green-500 mb-2"></i>
+            <p class="text-sm">Node.js</p>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-python text-4xl text-blue-600 mb-2"></i>
+            <p class="text-sm">Python</p>
+          </div>
+          <div class="text-center">
+            <i class="fas fa-code text-4xl text-green-600 mb-2"></i>
+            <p class="text-sm">C++</p>
+          </div>
+          <div class="text-center">
+            <i class="fas fa-c text-4xl text-red-600 mb-2"></i>
+            <p class="text-sm">C</p>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-java text-4xl text-red-700 mb-2"></i>
+            <p class="text-sm">Java</p>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-html5 text-4xl text-orange-500 mb-2"></i>
+            <p class="text-sm">HTML5</p>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-css3-alt text-4xl text-blue-500 mb-2"></i>
+            <p class="text-sm">CSS3</p>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-docker text-4xl text-blue-400 mb-2"></i>
+            <p class="text-sm">Docker</p>
+          </div>
+          <div class="text-center">
+            <i class="fab fa-github text-4xl text-black mb-2"></i>
+            <p class="text-sm">GitHub</p>
+          </div>
         </div>
       </div>
     </section>
