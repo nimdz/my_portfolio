@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nimsara De Zoysa | Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
@@ -14,9 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <!-- For icons -->
     <script>
       function handleFormSubmit(event) {
         event.preventDefault();
@@ -25,301 +22,326 @@
     </script>
   </head>
 
-  <body class="bg-gray-100 text-gray-900">
-    <!-- Navbar -->
-    <nav class="bg-white p-4 shadow-md flex justify-between items-center">
-      <h1 class="text-2xl font-semibold">Nimsara De Zoysa</h1>
-      <ul class="flex space-x-4">
-        <li><a href="#about" class="hover:text-blue-500">About</a></li>
-        <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
-        <li><a href="#education" class="hover:text-blue-500">Education</a></li>
-        <li>
-          <a href="#tech-stack" class="hover:text-blue-500">Technology Stack</a>
-        </li>
-        <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
-      </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="bg-blue-500 text-white text-center py-16">
-      <div class="container mx-auto">
+  <body class="bg-gray-100 text-gray-900 flex">
+    <!-- Vertical Navbar -->
+    <nav
+      class="bg-blue-600 w-64 h-screen p-6 shadow-lg fixed top-0 left-0 flex flex-col justify-between text-white"
+    >
+      <div class="flex flex-col items-center">
         <img
           src="./assets/img.jpeg"
           alt="Nimsara De Zoysa"
-          class="rounded-full w-32 h-32 mx-auto mb-4"
+          class="rounded-full w-32 h-32 mb-4 border-2 border-gray-300"
         />
-        <h2 class="text-3xl font-semibold">Hello! I'm Nimsara</h2>
-        <p class="text-lg mt-2">
-          A 3rd Year Computer Science Undergraduate with a passion for Software
-          Engineering, Machine Learning, and AI.
-        </p>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-12">
-      <div class="container mx-auto px-4">
-        <h3 class="text-2xl font-semibold mb-4">About Me</h3>
-        <p class="mb-6">
-          I'm currently pursuing a degree in Computer Science at the University
-          of Colombo School of Computing. With a strong foundation in
-          programming, I am eager to apply my skills in real-world applications,
-          especially in Software Engineering, Machine Learning, and AI.
-        </p>
-        <p class="mb-6">
-          With a current GPA of 3.7423, I am a dedicated and hardworking student
-          who thrives on tackling challenging projects. I am always eager to
-          take on new opportunities that push me to learn, grow, and excel in
-          the field of software engineering.
-        </p>
-      </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="bg-gray-50 py-12">
-      <div class="container mx-auto px-4">
-        <h3 class="text-2xl font-semibold mb-4">Education</h3>
-        <div class="bg-white rounded-lg shadow-md p-6 mb-6 flex">
-          <img
-            src="./assets/ucsc.jpg"
-            alt="Graduation Cap"
-            class="w-24 h-24 object-cover rounded-full mr-6"
-          />
-          <div>
-            <h4 class="text-xl font-semibold">
-              Bachelor of Science (Hon's)in Computer Science
-            </h4>
-            <p class="text-gray-600">
-              University of Colombo School of Computing
-            </p>
-            <p class="text-sm text-gray-600">2022 - Present</p>
-            <p class="mt-2">CGPA: 3.7423</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="bg-gray-50 py-12">
-      <div class="container mx-auto px-4">
-        <h3 class="text-2xl font-semibold mb-4">Projects</h3>
-
-        <!-- Project 1 -->
-        <div class="bg-white rounded-lg shadow-md p-6 mb-6 flex items-center">
-          <img
-            src="./assets/slrail.jpg"
-            alt="SLRail Project"
-            class="rounded-lg w-40 h-32 object-cover mr-6"
-          />
-          <div>
-            <h4 class="text-xl font-semibold">SLRail</h4>
-            <p class="mb-4">
-              SLRail is a real-time train tracking and reservation system
-              developed to enhance railway services in Sri Lanka.
-            </p>
-            <p class="text-sm text-gray-600 mb-2">
-              Duration: August 2023 - April 2024
-            </p>
-            <p class="text-sm text-gray-600 mb-4">
-              Technologies: PHP, OOP, MySQL
-            </p>
-            <a
-              href="https://github.com/nimdz/SLRail"
-              target="_blank"
-              class="text-blue-500 hover:underline"
+        <ul class="space-y-6">
+          <li>
+            <a href="#about" class="hover:text-blue-500 text-xl">About</a>
+          </li>
+          <li>
+            <a href="#education" class="hover:text-blue-500 text-xl"
+              >Education</a
             >
-              GitHub Repository
+          </li>
+
+          <li>
+            <a href="#projects" class="hover:text-blue-500 text-xl">Projects</a>
+          </li>
+
+          <li>
+            <a href="#tech-stack" class="hover:text-blue-500 text-xl"
+              >Technology Stack</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-blue-500 text-xl">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex space-x-4">
+        <a
+          href="https://github.com/nimdz"
+          target="_blank"
+          class="text-2xl hover:text-blue-500"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/nimsara-de-zoysa-572ba6236/"
+          target="_blank"
+          class="text-2xl hover:text-blue-500"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </nav>
+    <!-- Main Content -->
+    <div class="ml-64 w-full">
+      <!-- Personal Details & About Section -->
+      <section id="about" class="bg-gray-50 text-gray-900 py-16 mt-[200px]">
+        <div class="container mx-auto px-8">
+          <!-- Name Section -->
+          <div class="text-center mb-8">
+            <h2 class="text-4xl font-bold mb-2">
+              <span class="text-blue-500">Nimsara</span>
+              <span class="text-black-500">De Zoysa</span>
+            </h2>
+          </div>
+
+          <!-- Personal Details -->
+          <div class="text-lg mb-8">
+            <p>
+              <strong class="font-bold">Address:</strong> No 282/5,Gemunu
+              Mw,Walana, Panadura, Sri Lanka
+            </p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:nimsara@example.com" class="underline"
+                >nimsaradz@gmail.com</a
+              >
+            </p>
+            <p><strong>Phone:</strong> +94 70 229 7424</p>
+          </div>
+
+          <!-- Description -->
+          <div class="text-lg mb-8">
+            <p class="mb-6">
+              I'm a 3rd Year Undergrduate in Computer Science at the University
+              of Colombo School of Computing. With a strong foundation in
+              programming, I am eager to apply my skills in real-world
+              applications, especially in Software Engineering, Machine
+              Learning, and AI.
+            </p>
+            <p>
+              With a current GPA of 3.7423, I am a dedicated and hardworking
+              student who thrives on tackling challenging projects. I am always
+              eager to take on new opportunities that push me to learn, grow,
+              and excel in the field of software engineering.
+            </p>
+          </div>
+
+          <!-- Icons -->
+          <div class="flex justify-center space-x-6 mt-8">
+            <a
+              href="https://github.com/nimdz"
+              target="_blank"
+              class="text-3xl hover:text-blue-500"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/nimsara-de-zoysa-572ba6236/"
+              target="_blank"
+              class="text-3xl hover:text-blue-500"
+            >
+              <i class="fab fa-linkedin"></i>
             </a>
           </div>
         </div>
+      </section>
 
-        <!-- Project 2 -->
-        <div class="bg-white rounded-lg shadow-md p-6 mb-6 flex items-center">
-          <img
-            src="./assets/food.png"
-            alt="FoodFrenzy Project"
-            class="rounded-lg w-40 h-32 object-cover mr-6"
-          />
-          <div>
-            <h4 class="text-xl font-semibold">FoodFrenzy</h4>
-            <p class="mb-4">
-              FoodFrenzy is a food delivery app that provides users with a
-              seamless experience for ordering meals from local restaurants.
-            </p>
-            <p class="text-sm text-gray-600 mb-2">
-              Duration: March 2024 - May 2024
-            </p>
-            <p class="text-sm text-gray-600 mb-4">
-              Technologies: React JS, Redux, Stripe
-            </p>
-            <a
-              href="https://github.com/nimdz/FoodFrenzy"
-              target="_blank"
-              class="text-blue-500 hover:underline"
-            >
-              GitHub Repository
-            </a>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="bg-white rounded-lg shadow-md p-6 mb-6 flex items-center">
-          <img
-            src="./assets/logo.png"
-            alt="StayMate Project"
-            class="rounded-lg w-40 h-32 object-cover mr-6"
-          />
-          <div>
-            <h4 class="text-xl font-semibold">StayMate</h4>
-            <p class="mb-4">
-              StayMate is an online platform that facilitates short-term
-              property rentals, connecting travelers with hosts.
-            </p>
-            <p class="text-sm text-gray-600 mb-2">
-              Duration: May 2024 - Present
-            </p>
-            <p class="text-sm text-gray-600 mb-4">
-              Technologies: React JS, Node.js, MongoDB, Stripe, Socket
-              Programming
-            </p>
-            <a
-              href="https://github.com/nimdz/StayMate"
-              target="_blank"
-              class="text-blue-500 hover:underline"
-            >
-              GitHub Repository
-            </a>
-          </div>
-        </div>
-        <div class="text-center mt-6">
-          <a
-            href="https://github.com/nimdz"
-            target="_blank"
-            class="text-blue-500 hover:underline"
-          >
-            Visit my GitHub Profile for more projects
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Technology Stack Section -->
-    <section id="tech-stack" class="py-12">
-      <div class="container mx-auto px-4">
-        <h3 class="text-2xl font-semibold mb-4">Technology Stack</h3>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div class="text-center">
-            <i class="fab fa-php text-4xl text-indigo-500 mb-2"></i>
-            <p class="text-sm">PHP</p>
-          </div>
-          <div class="text-center">
-            <i class="fab fa-js-square text-4xl text-yellow-500 mb-2"></i>
-            <p class="text-sm">JavaScript</p>
-          </div>
-          <div class="text-center">
-            <i class="fab fa-react text-4xl text-blue-400 mb-2"></i>
-            <p class="text-sm">React</p>
-          </div>
-          <div class="text-center">
-            <i class="fab fa-node-js text-4xl text-green-500 mb-2"></i>
-            <p class="text-sm">Node.js</p>
-          </div>
-          <div class="text-center">
-            <i class="fab fa-python text-4xl text-blue-600 mb-2"></i>
-            <p class="text-sm">Python</p>
-          </div>
-          <div class="text-center">
-            <i class="fas fa-code text-4xl text-green-600 mb-2"></i>
-            <p class="text-sm">C++</p>
-          </div>
-          <div class="text-center">
-            <i class="fas fa-c text-4xl text-red-600 mb-2"></i>
-            <p class="text-sm">C</p>
-          </div>
-          <div class="text-center">
-            <i class="fab fa-java text-4xl text-red-700 mb-2"></i>
-            <p class="text-sm">Java</p>
-          </div>
-          <div class="text-center">
-            <i class="fab fa-html5 text-4xl text-orange-500 mb-2"></i>
-            <p class="text-sm">HTML5</p>
-          </div>
-          <div class="text-center">
-            <i class="fab fa-css3-alt text-4xl text-blue-500 mb-2"></i>
-            <p class="text-sm">CSS3</p>
-          </div>
-          <div class="text-center">
-            <i class="fab fa-docker text-4xl text-blue-400 mb-2"></i>
-            <p class="text-sm">Docker</p>
-          </div>
-          <div class="text-center">
-            <i class="fab fa-github text-4xl text-black mb-2"></i>
-            <p class="text-sm">GitHub</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-12">
-      <div class="container mx-auto px-4">
-        <h3 class="text-2xl font-semibold mb-4">Contact Me</h3>
-        <form onsubmit="handleFormSubmit(event)" class="space-y-4">
-          <p class="mb-6">
-            Feel free to reach out to me via email or LinkedIn.
-          </p>
-          <div class="flex flex-col md:flex-row md:space-x-4">
-            <input
-              type="text"
-              placeholder="Your Name"
-              class="p-2 border border-gray-300 rounded mb-4 md:mb-0 flex-1"
-              required
+      <!-- Education Section -->
+      <section id="education" class="py-16">
+        <div class="container mx-auto px-8">
+          <h3 class="text-3xl font-semibold mb-6">Education</h3>
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-8 flex">
+            <img
+              src="./assets/ucsc.jpg"
+              alt="Graduation Cap"
+              class="w-28 h-28 object-cover rounded-full mr-8"
             />
-            <input
-              type="email"
-              placeholder="Your Email"
-              class="p-2 border border-gray-300 rounded flex-1"
-              required
-            />
+            <div>
+              <h4 class="text-2xl font-semibold">
+                Bachelor of Science (Hon's) in Computer Science
+              </h4>
+              <p class="text-gray-600">
+                University of Colombo School of Computing
+              </p>
+              <p class="text-sm text-gray-600">2022 - Present</p>
+              <p class="mt-4 text-lg">CGPA: 3.7423</p>
+            </div>
           </div>
-          <textarea
-            placeholder="Your Message"
-            class="w-full p-2 border border-gray-300 rounded"
-            rows="4"
-            required
-          ></textarea>
-          <button
-            type="submit"
-            class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-          >
-            Send Message
-          </button>
-        </form>
-        <div class="flex space-x-4 mt-6">
-          <a
-            href="mailto:nimsaradz@gmail.com"
-            class="text-blue-500 hover:underline"
-            >nimsaradz@gmail.com</a
-          >
-          <a
-            href="https://www.linkedin.com/in/nimsara-de-zoysa-572ba6236/"
-            target="_blank"
-            class="text-blue-500 hover:underline"
-            >LinkedIn</a
-          >
-          <a
-            href="https://github.com/nimdz"
-            target="_blank"
-            class="text-blue-500 hover:underline"
-            >GitHub</a
-          >
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer class="bg-white p-4 text-center text-sm text-gray-500">
-      © 2024 Nimsara De Zoysa. All rights reserved.
-    </footer>
+      <!-- Projects Section -->
+      <section id="projects" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-8">
+          <h3 class="text-3xl font-semibold mb-6">Projects</h3>
+
+          <!-- Project 1 -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-8 flex items-center">
+            <img
+              src="./assets/slrail.jpg"
+              alt="SLRail Project"
+              class="rounded-lg w-48 h-36 object-cover mr-8"
+            />
+            <div>
+              <h4 class="text-2xl font-semibold">SLRail</h4>
+              <p class="mb-4 text-lg">
+                SLRail is a real-time train tracking and reservation system
+                developed to enhance railway services in Sri Lanka.
+              </p>
+              <p class="text-sm text-gray-600 mb-2">
+                Duration: August 2023 - April 2024
+              </p>
+              <p class="text-sm text-gray-600 mb-4">
+                Technologies: PHP, OOP, MySQL
+              </p>
+              <a
+                href="https://github.com/nimdz/SLRail"
+                target="_blank"
+                class="text-blue-500 hover:underline text-lg"
+              >
+                GitHub Repository
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="bg-white rounded-lg shadow-lg p-8 mb-8 flex items-center">
+            <img
+              src="./assets/food.png"
+              alt="FoodFrenzy Project"
+              class="rounded-lg w-48 h-36 object-cover mr-8"
+            />
+            <div>
+              <h4 class="text-2xl font-semibold">FoodFrenzy</h4>
+              <p class="mb-4 text-lg">
+                FoodFrenzy is a food delivery app that provides users with a
+                seamless experience for ordering meals from local restaurants.
+              </p>
+              <p class="text-sm text-gray-600 mb-2">
+                Duration: March 2024 - May 2024
+              </p>
+              <p class="text-sm text-gray-600 mb-4">
+                Technologies: React Native, Firebase
+              </p>
+              <a
+                href="https://github.com/nimdz/FoodFrenzy"
+                target="_blank"
+                class="text-blue-500 hover:underline text-lg"
+              >
+                GitHub Repository
+              </a>
+            </div>
+          </div>
+          <div class="text-center mt-6">
+            <a
+              href="https://github.com/nimdz"
+              target="_blank"
+              class="text-blue-500 hover:underline"
+            >
+              Visit my GitHub Profile for more projects
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technology Stack Section -->
+      <section id="tech-stack" class="py-12">
+        <div class="container mx-auto px-4">
+          <h3 class="text-2xl font-semibold mb-4">Technology Stack</h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="text-center">
+              <i class="fab fa-php text-4xl text-indigo-500 mb-2"></i>
+              <p class="text-sm">PHP</p>
+            </div>
+            <div class="text-center">
+              <i class="fab fa-js-square text-4xl text-yellow-500 mb-2"></i>
+              <p class="text-sm">JavaScript</p>
+            </div>
+            <div class="text-center">
+              <i class="fab fa-react text-4xl text-blue-400 mb-2"></i>
+              <p class="text-sm">React</p>
+            </div>
+            <div class="text-center">
+              <i class="fab fa-node-js text-4xl text-green-500 mb-2"></i>
+              <p class="text-sm">Node.js</p>
+            </div>
+            <div class="text-center">
+              <i class="fab fa-python text-4xl text-blue-600 mb-2"></i>
+              <p class="text-sm">Python</p>
+            </div>
+            <div class="text-center">
+              <i class="fas fa-code text-4xl text-green-600 mb-2"></i>
+              <p class="text-sm">C++</p>
+            </div>
+            <div class="text-center">
+              <i class="fas fa-c text-4xl text-red-600 mb-2"></i>
+              <p class="text-sm">C</p>
+            </div>
+            <div class="text-center">
+              <i class="fab fa-java text-4xl text-red-700 mb-2"></i>
+              <p class="text-sm">Java</p>
+            </div>
+            <div class="text-center">
+              <i class="fab fa-html5 text-4xl text-orange-500 mb-2"></i>
+              <p class="text-sm">HTML5</p>
+            </div>
+            <div class="text-center">
+              <i class="fab fa-css3-alt text-4xl text-blue-500 mb-2"></i>
+              <p class="text-sm">CSS3</p>
+            </div>
+            <div class="text-center">
+              <i class="fab fa-docker text-4xl text-blue-400 mb-2"></i>
+              <p class="text-sm">Docker</p>
+            </div>
+            <div class="text-center">
+              <i class="fab fa-github text-4xl text-black mb-2"></i>
+              <p class="text-sm">GitHub</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-8">
+          <h3 class="text-3xl font-semibold mb-6">Contact Me</h3>
+          <form onsubmit="handleFormSubmit(event)" class="space-y-6">
+            <div>
+              <label for="name" class="block text-lg">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full px-4 py-2 border rounded-lg"
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-lg">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full px-4 py-2 border rounded-lg"
+              />
+            </div>
+            <div>
+              <label for="message" class="block text-lg">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                class="w-full px-4 py-2 border rounded-lg"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="px-6 py-2 bg-blue-500 text-white rounded-lg"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer class="bg-blue-600 text-white py-4 text-center">
+        <p class="text-sm">
+          &copy; 2024 Nimsara De Zoysa. All rights reserved.
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
